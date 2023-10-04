@@ -1,7 +1,7 @@
 # Camera2-API
-![WhatsApp Image 2023-10-05 at 12 06 44 AM](https://github.com/AravindhanDeveloper/Camera2-API/assets/76999163/ec0a7195-6772-4743-8ee8-448894406218)
-SplashScreen
-![WhatsApp Image 2023-10-05 at 12 06 44 AM (1)](https://github.com/AravindhanDeveloper/Camera2-API/assets/76999163/70fffe2e-302d-47e7-ac45-69858543ab84)
+![WhatsApp Image 2023-10-05 at 12 06 44 AM](https://github.com/AravindhanDeveloper/Camera2-API/assets/76999163/ec0a7195-6772-4743-8ee8-448894406218)![WhatsApp Image 2023-10-05 at 12 06 44 AM (1)](https://github.com/AravindhanDeveloper/Camera2-API/assets/76999163/70fffe2e-302d-47e7-ac45-69858543ab84)
+
+
 Homepage tab layout implement
 ![WhatsApp Image 2023-10-05 at 12 06 45 AM](https://github.com/AravindhanDeveloper/Camera2-API/assets/76999163/436e11dc-8397-4901-b71a-f569019284fd)
 Upload Button Onclick camera2 Api implement
