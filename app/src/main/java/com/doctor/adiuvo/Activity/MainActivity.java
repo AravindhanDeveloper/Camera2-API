@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private MainActivityTabAdapter viewPagerAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,13 +27,17 @@ public class MainActivity extends AppCompatActivity {
     private void initView() {
         tabLayout = findViewById(R.id.tab_layout);
         viewPager = findViewById(R.id.viewPager);
-        viewPagerAdapter = new MainActivityTabAdapter(getSupportFragmentManager());
+        if (getIntent().getStringExtra("WHO")!=null) {
+            viewPagerAdapter = new MainActivityTabAdapter(getSupportFragmentManager(), 1);
+        } else {
+            viewPagerAdapter = new MainActivityTabAdapter(getSupportFragmentManager(), position);
+
+        }
         viewPager.setAdapter(viewPagerAdapter);
         // Connect the TabLayout with the ViewPager
         tabLayout.setupWithViewPager(viewPager);
 
     }
-
 
 
 }

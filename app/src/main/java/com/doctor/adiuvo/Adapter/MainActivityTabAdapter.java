@@ -9,8 +9,9 @@ import com.doctor.adiuvo.Fragments.GalleryFragment;
 
 public class MainActivityTabAdapter extends FragmentPagerAdapter {
 
-    public MainActivityTabAdapter(FragmentManager fm) {
+    public MainActivityTabAdapter(FragmentManager fm,int position) {
         super(fm);
+
     }
 
     @Override

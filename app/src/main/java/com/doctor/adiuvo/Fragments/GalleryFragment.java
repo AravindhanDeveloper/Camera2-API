@@ -20,15 +20,16 @@ public class GalleryFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-         view = inflater.inflate(R.layout.fragment_gallery, container, false);
-        uploadBtn=view.findViewById(R.id.upload_btn);
+        view = inflater.inflate(R.layout.fragment_gallery, container, false);
+        uploadBtn = view.findViewById(R.id.upload_btn);
 
-uploadBtn.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View view) {
-        startActivity(new Intent(getActivity(), CameraActivity.class));
+        uploadBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), CameraActivity.class));
 
-    }
-});
+            }
+        });
         return view;
-}}
+    }
+}

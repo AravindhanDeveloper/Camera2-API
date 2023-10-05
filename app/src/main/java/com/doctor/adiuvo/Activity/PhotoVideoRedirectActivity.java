@@ -18,14 +18,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 
+import com.doctor.adiuvo.Model.MediaItem;
 import com.doctor.adiuvo.R;
 import com.google.android.material.button.MaterialButton;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 
 public class PhotoVideoRedirectActivity extends AppCompatActivity {
+    public static  List<MediaItem> mediaItems = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,27 +48,41 @@ public class PhotoVideoRedirectActivity extends AppCompatActivity {
         ImageView imgShow = findViewById(R.id.imgShow);
         MaterialButton discardBtn = findViewById(R.id.discard_btn);
         MaterialButton saveBtn = findViewById(R.id.save_btn);
+        String path = getIntent().getStringExtra("PATH");
+
         saveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent mIntent = new Intent(PhotoVideoRedirectActivity.this, MainActivity.class);
-                startActivity(mIntent);
-                finish();
+                if (getIntent().getStringExtra("WHO").equalsIgnoreCase("Image")) {
+                    MediaItem mediaItem = new MediaItem(path, true);
+                    mediaItems.add(mediaItem);
+                    Intent mIntent = new Intent(PhotoVideoRedirectActivity.this, MainActivity.class);
+                    mIntent.putExtra("WHO", "photoView");
+
+                    startActivity(mIntent);
+                    finish();
+                } else {
+                    MediaItem mediaItem = new MediaItem(path, false);
+                    mediaItems.add(mediaItem);
+                    Intent mIntent = new Intent(PhotoVideoRedirectActivity.this, MainActivity.class);
+                    mIntent.putExtra("WHO", "photoView");
+                    startActivity(mIntent);
+                }
             }
         });
-        String path=getIntent().getStringExtra("PATH");
         discardBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
                 File fileToDelete = new File(path);
-                Log.e("pathvalue",path);
+                Log.e("pathvalue", path);
                 if (fileToDelete.exists()) {
                     if (fileToDelete.delete()) {
                         finish();
                         Toast.makeText(PhotoVideoRedirectActivity.this, "File discard successfully", Toast.LENGTH_SHORT).show();
                     } else {
-                        Toast.makeText(PhotoVideoRedirectActivity.this, "fail", Toast.LENGTH_SHORT).show();                    }
+                        Toast.makeText(PhotoVideoRedirectActivity.this, "fail", Toast.LENGTH_SHORT).show();
+                    }
                 } else {
                     Toast.makeText(PhotoVideoRedirectActivity.this, "File does not exist", Toast.LENGTH_SHORT).show();
                 }
