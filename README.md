@@ -3,7 +3,7 @@
 <table>
   <tr>
     <td><img src="https://github.com/AravindhanDeveloper/Camera2-API/assets/76999163/ec0a7195-6772-4743-8ee8-448894406218" alt="Image 1"></td>
-    <td><img src="https://github.com/AravindhanDeveloper/Camera2-API/assets/76999163/70fffe2e-302d-47e7-ac45-69858543ab84" alt="Image 2"></td>
+    <td><img src="![WhatsApp Image 2023-10-06 at 10 48 29 AM](https://github.com/Rohit-Varshney001/Gallery-App/assets/76999163/af86afa8-d6f9-489a-8311-451565b2f54c)" alt="Image 2"></td>
     <td><img src="https://github.com/AravindhanDeveloper/Camera2-API/assets/76999163/436e11dc-8397-4901-b71a-f569019284fd" alt="Image 3"></td>
   </tr>
   <tr>
