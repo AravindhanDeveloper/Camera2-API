@@ -1,17 +1,26 @@
 #Camera2-API
 
-<table>
-  <tr>
-    <td><img src="https://github.com/AravindhanDeveloper/Camera2-API/assets/76999163/ec0a7195-6772-4743-8ee8-448894406218" alt="Image 1"></td>
-    <td><img src="![WhatsApp Image 2023-10-06 at 10 48 29 AM](https://github.com/Rohit-Varshney001/Gallery-App/assets/76999163/af86afa8-d6f9-489a-8311-451565b2f54c)" alt="Image 2"></td>
-    <td><img src="https://github.com/AravindhanDeveloper/Camera2-API/assets/76999163/436e11dc-8397-4901-b71a-f569019284fd" alt="Image 3"></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/AravindhanDeveloper/Camera2-API/assets/76999163/e1a6ab04-9f2c-49a3-a3ff-4eaf0563368c" alt="Image 4"></td>
-    <td><img src="https://github.com/AravindhanDeveloper/Camera2-API/assets/76999163/f30d5173-c0f2-449b-9109-c24cb29e5d59" alt="Image 5"></td>
-    <td><img src="https://github.com/AravindhanDeveloper/Camera2-API/assets/76999163/91dc1e7e-f690-4e2f-ab0f-edd70a443efa" alt="Image 6"></td>
-  </tr>
-</table>
+<div align="center">
+  <img src="https://github.com/Rohit-Varshney001/Gallery-App/assets/76999163/eb84687e-4b0d-47de-a4e8-f386b3ce23f3" width="30%">
+  <img src="https://github.com/Rohit-Varshney001/Gallery-App/assets/76999163/d3ee5928-1a82-4282-80e3-93206a4fb7b1" width="30%">
+  <img src="https://github.com/Rohit-Varshney001/Gallery-App/assets/76999163/6b818ff3-6ac9-4051-8125-f1db125a1b19" width="30%">
+</div>
+
+<div align="center">
+  <em>Caption for Image 1</em>
+  <em>Caption for Image 2</em>
+  <em>Caption for Image 3</em>
+</div>
+
+<div align="center">
+  <img src="https://github.com/Rohit-Varshney001/Gallery-App/assets/76999163/6100219b-c7d1-472c-89ba-3ec4557116ed" width="30%">
+  <img src="https://github.com/Rohit-Varshney001/Gallery-App/assets/76999163/7dd72ecf-9977-4a23-8028-dd81294aa1f0" width="30%">
+</div>
+
+<div align="center">
+
+</div>
+
 
 # splash screen in an Android app that displays for 3 seconds before transitioning to the main activity.  
 
